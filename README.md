@@ -21,3 +21,9 @@ PythonDoSign
 
 # 使用框架说明
 框架处于 v22.0126 版本，处于初测阶段，目前不公开发行。
+
+# 下载与使用
+克隆/下载此仓库的所有文件，安装 requirements.txt 中的支持库列表即可。使用 Python 版本不小于 3.X （推荐使用 Python 3.9.X）。
+
+# 文档与开发
+请读阅读我们的 wiki : https://github.com/wojiaoyishang/PythonDoSign/wiki
