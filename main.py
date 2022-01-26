@@ -80,6 +80,10 @@ if __name__ == "__main__":
                 # 设置任务环节
                 TaskRunTime = task['TaskRunTime'].split(" ") + ["*"] * 7  # type:list
 
+                for x in range(len(TaskRunTime)):
+                    if TaskRunTime[x] == "?":
+                        TaskRunTime[x] = "*"
+
                 PyTaskRunTime = {
                     "second": TaskRunTime[0],
                     "minute": TaskRunTime[1],
