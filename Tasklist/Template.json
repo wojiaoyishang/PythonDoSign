@@ -1,0 +1,20 @@
+[
+  {
+    "TaskName": "这里是任务的任务1名",
+    "TaskPlugin": "对于 Plugins 下的签到py代码",
+    "TaskMark": "任务的备注",
+    "TaskRunTime": "使用 Cron表达式 定时任务",
+    "Data": {
+      "cookie": "任务所需要的数据，因任务而定"
+    }
+  },
+  {
+    "TaskName": "这里是任务的任务2名",
+    "TaskPlugin": "对于 Plugins 下的签到py代码",
+    "TaskMark": "任务的备注",
+    "TaskRunTime": "使用 Cron表达式 定时任务",
+    "Data": {
+      "cookie": "任务所需要的数据，因任务而定"
+    }
+  }
+]
