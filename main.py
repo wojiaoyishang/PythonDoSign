@@ -80,6 +80,9 @@ if __name__ == "__main__":
             for task in taskData:  # type:dict
                 console.log(f"正在设置任务 “{task['TaskName']}” 。")
                 # 设置任务环节
+                TaskPlugin = task['TaskPlugin']
+                if TaskPlugin not in plugins:
+                    raise BaseException("并未拥有插件 " + TaskPlugin)
                 TaskRunTime = task['TaskRunTime'].split(" ") + ["*"] * 7  # type:list
 
                 for x in range(len(TaskRunTime)):
@@ -97,12 +100,12 @@ if __name__ == "__main__":
                 }
 
                 sched.add_job(taskManager, "cron", kwargs=task, timezone="Asia/Shanghai", **PyTaskRunTime)
-
+                console.log(f"设置任务 “{task['TaskName']} 完成” 。")
         except BaseException as error:
             console.error(f"未能加载任务文件 {'./Tasklist/' + taskFile} ，原因是 {str(error)} 。")
             continue
     sched.start()
-    console.log(f"正在设置任务完成。")
+    console.log(f"全部任务设置完成。")
     while True:
         time.sleep(1)
 
