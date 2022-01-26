@@ -28,7 +28,7 @@ PythonDoSign
 更多请查看我们的所写的文档！
 
 # 文档与开发
-请读阅读我们的 wiki : https://github.com/wojiaoyishang/PythonDoSign/wiki
+请读阅读我们的 wiki : https://github.com/wojiaoyishang/PythonDoSign/wiki 或者 https://gitee.com/wojiaoyishang/PythonDoSign/wikis
 
 # 关于
 由 我叫以赏 制作！
