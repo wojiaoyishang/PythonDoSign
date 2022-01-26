@@ -31,4 +31,7 @@ PythonDoSign
 请读阅读我们的 wiki : https://github.com/wojiaoyishang/PythonDoSign/wiki
 
 # 关于
-有 我叫以赏 制作！
+由 我叫以赏 制作！
+
+
+
