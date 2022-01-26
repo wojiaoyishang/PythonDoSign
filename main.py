@@ -28,6 +28,8 @@ def taskManager(**kwargs):
         Taskname = kwargs['TaskName']
         TaskPlugin = kwargs['TaskPlugin']
         TaskMark = kwargs['TaskMark']
+        if 'Data' not in kwargs:
+            console.error(f"无法执行自动任务 {Taskname} ，因为没有提供所需的 数据(Data) 键(Key) ！若不需要数据请留空但是不要删除！")
         try:
             console.info(f"输出信息如下：\n---------------------------------\n"
                          f"---->即将执行任务 {Taskname}\n"
@@ -38,7 +40,7 @@ def taskManager(**kwargs):
             if not returnInfo.get("NotNext", False):
                 taskReturnProcessor(returnInfo)
         except BaseException as error:
-            console.error(f"无法执行自动任务 {Taskname} ，可能是因为任务执行时并未提供正确的插件。原因有 " + str(error) + " 。")
+            console.error(f"无法执行自动任务 {Taskname} ，可能是因为任务执行时并未提供正确的插件。原因出现在插件 " + str(error) + " 。")
 
     except:
         console.error("无法执行指定签到任务，因为此任务并未提供正确的任务格式！")
