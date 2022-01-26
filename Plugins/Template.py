@@ -41,11 +41,13 @@ def main(**kwargs):
     # *Message -- （必要）信息内容概要
     # *Detail -- （必要）信息内容的细节
     # *More -- （必要）附加的内容，将会直接添加在消息末尾。（会自动在前面加一个换行符）
+    # *TaskInfo -- （必要）便于后续处理任务，获取任务的信息
     return {
         "NotNext": False,
         "State": "Success",
         "Message": "任务成功完成！",
         "Detail": "通过请求接口自动签到了。目前XX数量XX，XX数量XX。",
         "More": "附加的内容，将会填在任务结果的末尾。",
-        "Data": "这服务器返回的数据可以填写这里，也可以不填。"
+        "Data": "这服务器返回的数据可以填写这里，也可以不填。",
+        "TaskInfo": kwargs
     }
