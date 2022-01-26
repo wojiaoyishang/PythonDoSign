@@ -25,5 +25,10 @@ PythonDoSign
 # 下载与使用
 克隆/下载此仓库的所有文件，安装 requirements.txt 中的支持库列表即可。使用 Python 版本不小于 3.X （推荐使用 Python 3.9.X）。
 
+更多请查看我们的所写的文档！
+
 # 文档与开发
 请读阅读我们的 wiki : https://github.com/wojiaoyishang/PythonDoSign/wiki
+
+# 关于
+有 我叫以赏 制作！
