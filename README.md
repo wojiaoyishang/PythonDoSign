@@ -5,7 +5,8 @@ Python 自动化签到打卡框架，使用 Python 编写的任务签到框架�
 
 ```
 PythonDoSign
-│  main.py                        # 程序入口程序，主要用于插件加载、任务安排等
+│  main.py                        # 程序入口程序
+|  taskLoader.py                  # 主要用于插件加载、任务安排等
 │  requirements.txt               # 所需支持库的列表
 │
 ├─Module                          # 存放程序运行的自带或者第三方模块 其中的 console.py 和 taskReturnProcessor.py 是自带的
