@@ -2,6 +2,7 @@
   {
     "TaskName": "这里是任务的任务1名",
     "TaskPlugin": "对于 Plugins 下的签到py代码",
+    "TaskID": "用于标志的ID",
     "TaskMark": "任务的备注",
     "TaskRunTime": "使用 Cron表达式 定时任务",
     "Data": {
@@ -11,6 +12,7 @@
   {
     "TaskName": "这里是任务的任务2名",
     "TaskPlugin": "对于 Plugins 下的签到py代码",
+    "TaskID": "用于标志的ID",
     "TaskMark": "任务的备注",
     "TaskRunTime": "使用 Cron表达式 定时任务",
     "Data": {
