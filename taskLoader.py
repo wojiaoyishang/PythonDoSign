@@ -99,7 +99,7 @@ def main():
                     "year": TaskRunTime[6]
                 }
 
-                sched.add_job(taskManager, "cron", kwargs=task, timezone="Asia/Shanghai", id=task.get("id", task['TaskName']),**PyTaskRunTime)
+                sched.add_job(taskManager, "cron", kwargs=task, timezone="Asia/Shanghai", id=task.get("TaskID", task['TaskName']),**PyTaskRunTime)
                 console.log(f"设置任务 “{task['TaskName']} 完成” 。")
         except BaseException as error:
             console.error(f"未能加载任务文件 {'./Tasklist/' + taskFile} ，原因是 {str(error)} 。")
