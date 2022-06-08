@@ -34,8 +34,8 @@ def info(*args):
 def log(*args):
     print(f'{LIGHT_CYAN}[{time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}](Log):', *args, f"{NONE}")
 
-def warm(*args):
-    print(f'{YELLOW}[{time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}](Warm):', *args, f"{NONE}")
+def warn(*args):
+    print(f'{YELLOW}[{time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}](Warn):', *args, f"{NONE}")
 
 def success(*args):
     print(f'{GREEN}[{time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}](Success):', *args, f"{NONE}")
